@@ -1,0 +1,89 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+
+input {
+  width: 400px;
+  height: 40px;
+  border-radius: 8px;
+  padding: 8px;
+  outline: none;
+}
+
+.suggestion-container {
+  width: 400px;
+  background-color: white;
+  border: #888;
+  border-radius: 8px;
+  padding: 8px;
+  margin-top: 4px;
+  color: #888;
+  text-align: left;
+}
+
+.suggestion-container ul > li {
+  list-style: none;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+/* .suggestion-container ul > li:hover{
+  color: rgb(131, 141, 134);
+  background-color: #e4e2e2;
+  padding: 4px;
+  transition: ease-in;
+  transition-duration: 200ms;
+} */
+
+
+.suggestion-container ul > li:hover {
+  color: rgb(131, 141, 134);
+  background-color: #e4e2e2;
+  transform: scale(1.02);
+  transition: transform 200ms ease-in, background-color 200ms ease-in, color 200ms ease-in;
+}
+
+
+input::placeholder {
+  color: #f2f2f2;
+  font-size: 13px;
+}
